@@ -11,7 +11,7 @@
 
 :root {
   /* Variáveis CSS: caminho padrão para imagem de fundo (pode ser substituído) */
-  --bg-image: url("Pictures/Wallpaper.jpg");
+  --bg-image: url("pictures/Wallpaper.jpg");
 }
 
 /* Estilos globais do body */
