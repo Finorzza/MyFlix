@@ -1,0 +1,148 @@
+<!doctype html>
+<!-- Declara o tipo de documento HTML5 -->
+<html lang="PT-BR">
+  <!-- Abre o elemento raiz com atributo de linguagem -->
+  <head>
+    <!-- Metadado: conjunto de caracteres do documento -->
+    <meta charset="UTF-8" />
+    <!-- Metadado: configura viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título exibido na aba do navegador -->
+    <title>MyFlix</title>
+    <!-- Link para o arquivo de estilos principal do projeto -->
+    <link rel="stylesheet" href="Styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Corpo do documento inicia aqui -->
+    <header class="navbar" aria-label="Cabeçalho do site">
+      <div class="container">
+        <div class="navbar-left">
+          <a href="index.html" class="brand">MYFLIX</a>
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Séries</a></li>
+              <li><a href="#">Filmes</a></li>
+              <li><a href="#">Populares</a></li>
+              <li><a href="#">Minha lista</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar-center">
+          <div class="search-wrapper">
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Buscar perfis"
+              aria-label="Buscar"
+            />
+            <button class="search-button" aria-label="Buscar">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="navbar-right">
+          <span class="kids-link">Convidado</span>
+
+          <div
+            class="nav-notification"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-label="Notificações"
+          >
+            <i class="fas fa-bell icon"></i>
+            <span class="notification-badge">3</span>
+            <div class="notification-card" aria-hidden="true">
+              <div class="notification-card-header">
+                <strong>Notificações</strong>
+              </div>
+              <ul class="notification-list">
+                <li>🎁 Bem-vindo ao MyFlix!</li>
+                <li>🔔 Novo episódio disponível</li>
+                <li>⭐ Recomendação: Forrest Gump</li>
+              </ul>
+              <div class="notification-card-footer">
+                <a href="#">Ver todas</a>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="theme-toggle"
+            aria-label="Alternar tema"
+            title="Alternar tema"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <button
+            class="profile-menu"
+            title="Perfil"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img
+              class="profile-icon"
+              src="pictures/Convidado.jpg"
+              alt="Profile"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Conteúdo principal da página -->
+      <h2 id="profiles-title">Quem está assistindo?</h2>
+      <!-- Título da seção de perfis com ID para ligação -->
+      <!-- Lista não ordenada que contém uma lista ordenada de perfis
+           Estrutura semântica: ul (container) > li (grupo) > ol (perfis ordenados) -->
+      <ul class="Profiles" aria-labelledby="profiles-title">
+        <li class="Profiles-group">
+          <ol class="Profiles-list">
+            <li class="Profile">
+              <figure>
+                <a href="catalogo/catalogo.html" class="profile-link">
+                  <img src="pictures/Image 1.png" alt="Tony" />
+                </a>
+                <p>Tony</p>
+              </figure>
+            </li>
+            <li class="Profile">
+              <figure>
+                <a href="catalogo/catalogo.html" class="profile-link">
+                  <img src="pictures/Image 2.jpg" alt="Thor" />
+                </a>
+                <p>Thor</p>
+              </figure>
+            </li>
+            <li class="Profile">
+              <figure>
+                <a href="catalogo/catalogo.html" class="profile-link">
+                  <img src="pictures/Image 3.jpg" alt="Natasha" />
+                </a>
+                <p>Natasha</p>
+              </figure>
+            </li>
+            <li class="Profile">
+              <figure>
+                <a href="catalogo/catalogo.html" class="profile-link">
+                  <img src="pictures/Convidado.jpg" alt="Convidado" />
+                </a>
+                <p>Convidado</p>
+              </figure>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <div class="profiles-controls below-profiles"></div>
+    </main>
+    <script src="catalogo/js/index.js"></script>
+  </body>
+</html>

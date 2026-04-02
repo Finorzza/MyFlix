@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyFlix</title>
+    <link rel="stylesheet" href="catalogo.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-left">
+        <a href="..//index.html" class="brand logo">MYFLIX</a>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=hPr-Yc92qaY"
+                class="active"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY">Séries</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY">Filmes</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY">Populares</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY">Minha lista</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-center">
+        <div class="search-wrapper" onclick="this.querySelector('input').focus()">
+          <input
+            class="search-input"
+            type="search"
+            placeholder=""
+            aria-label="Buscar"
+          />
+          <button class="search-button" aria-label="Buscar">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-right-pill">
+          <span class="kids-link">Convidado</span>
+          <div class="nav-notification" role="button" tabindex="0" aria-expanded="false" aria-label="Notificações">
+            <i class="fas fa-bell icon"></i>
+            <span class="notification-badge">3</span>
+            <div class="notification-card" aria-hidden="true">
+              <div class="notification-card-header"><strong>Notificações</strong></div>
+              <ul class="notification-list">
+                <li>🎁 Bem-vindo ao MyFlix!</li>
+                <li>🔔 Novos episódios disponíveis</li>
+                <li>⭐ Recomendação: Vingadores: Doutor Destino</li>
+              </ul>
+              <div class="notification-card-footer"><a href="#">Ver todas</a></div>
+            </div>
+          </div>
+
+          <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <button class="profile-menu" title="Perfil" aria-haspopup="true" aria-expanded="false" style="background:transparent;border:none;display:flex;align-items:center;gap:6px;color:inherit">
+            <img class="profile-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile" />
+            <i class="fas fa-caret-down" style="font-size: 12px; color: rgba(255,255,255,0.8);"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <!-- Sliders Container -->
+    <main class="sliders-container" id="main-content">
+      <!-- Javascript will inject the rows here -->
+    </main>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
